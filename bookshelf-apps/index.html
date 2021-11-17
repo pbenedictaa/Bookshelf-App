@@ -1,0 +1,86 @@
+<!-- Nama: Putri Benedicta Simanjuntak
+username dicoding: pbenedictaa
+email: pbenedictaa@gmail.com -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="head_bar">
+    <h1 class="head_bar__title">Bookshelf Apps</h1>
+</header>
+<main>
+    <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+            <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="input_inline">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="submit" type="submit">Masukkan Buku ke Rak</button>
+        </form>
+    </section>
+
+    <section class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="searchBook">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text" placeholder="masukkan judul buku">
+        </form>
+        <div class="searchResult">
+        </div>
+    </section>
+
+    <section class="delete_section">
+        <button id="deleteAllBook" type="button">Hapus Semua Buku di Rak</button>
+    </section>
+    
+    <section class="book_shelf">
+        <h2>Daftar Buku</h2>
+        <br>
+        <h3>Belum selesai dibaca</h3>
+        <div id="uncompleteBookshelfList" class="book_list">
+        </div>
+        <h3>Selesai dibaca</h3>
+        <div id="completeBookshelfList" class="book_list">
+        </div>
+    </section>
+</main>
+<footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Putri Benedicta Simanjuntak</p>
+                    <p>copyright &copy; 2021</p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/dom.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
